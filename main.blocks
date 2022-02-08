@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="mrUK,id~TGD);DH0O;iF">pressed</variable></variables><block type="pxt-on-start" id=":%aFO%_B=][zO)1dy)k6" x="20" y="20"><statement name="HANDLER"><block type="device_show_leds" id="bAD;m]Xiw7/DG6y`5bEl"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . # . . 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="sbrick_connect" id="M#U}MOC|;EV,7!?J7o]#"><value name="n"><shadow type="text" id="TIOGUR?ZNPL,c$QVy.D!"><field name="TEXT">Duck   </field></shadow></value></block></next></block></statement></block><block type="bluetooth_on_connected" id="^,#=_BO8kQ~XdFdPH}T2" x="406" y="20"><statement name="HANDLER"><block type="device_show_leds" id="NLuMSaNHQVtJzkAIM?ML"><field name="LEDS">`
+        . # # . . 
+        . # . # . 
+        . # # . . 
+        . # . # . 
+        . # # . .
+        `</field></block></statement></block><block type="bluetooth_on_disconnected" id="NHNg2To_gu/*wN13/y#w" x="695" y="20"><statement name="HANDLER"><block type="device_show_leds" id="+1L/~6.7wvs40!+%PW55"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field></block></statement></block><block type="device_button_event" id="q/=Fj)f%^f;~p`:hj~{t" x="984" y="20"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="sbrick_drive" id="HD%:[IQ%Q-@lH8q}2}et"><field name="p">SBPort.D</field><field name="d">SBDirection.Forward</field><value name="power"><shadow type="math_number" id="j}Xl91.T9;v|7(?%g;s1"><field name="NUM">255</field></shadow></value><next><block type="device_pause" id="*_xVTlYf3AIky{{Ts1AS"><value name="pause"><shadow type="timePicker" id="K6[t,9y7i^u+N4O![B!N"><field name="ms">1000</field></shadow></value><next><block type="sbrick_brake" id="*-#$/c~G7-E~:m_TW6/Q"><field name="p">SBPort.D</field></block></next></block></next></block></statement></block><block type="every_interval" id="MxtMjqhU-#uW;}M}82|!" x="20" y="418"><value name="interval"><shadow type="longTimePicker" id="{2xjD?pmQDUqi_?H}2UZ"><field name="ms">100</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="XQHg#WUKz4an2{S8e+Hr"><field name="VAR" id="mrUK,id~TGD);DH0O;iF">pressed</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_button2" id="l-xBqD{t*sDJzdi:I9aY"><field name="NAME">Button.B</field></block></value><next><block type="controls_if" id="LLiMseNQGw$,CG+s/i+*"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="]$HTyt@MTZ+E(SN)Dq7y"><field name="VAR" id="mrUK,id~TGD);DH0O;iF">pressed</field></block></value><statement name="DO0"><block type="sbrick_drive" id="KCf[kofSDB%?l5-^Y1A@"><field name="p">SBPort.C</field><field name="d">SBDirection.Backward</field><value name="power"><shadow type="math_number" id="6n/F+FN#shh]KKLKP+KI"><field name="NUM">255</field></shadow></value></block></statement><statement name="ELSE"><block type="sbrick_brake" id="=1)u1YIKE8!n)E:/!O2Y"><field name="p">SBPort.C</field></block></statement></block></next></block></statement></block><block type="sbrick_on_connected" id="1qT%WA)-`pm|CM2AqG(0" x="692" y="394"><statement name="HANDLER"><block type="device_show_leds" id="JlDcXQzYV#P45xF!*1hl"><field name="LEDS">`
+        . # # # . 
+        . # . . . 
+        . . # . . 
+        . . . # . 
+        . # # # .
+        `</field><next><block type="sbrick_set_device" id="ZoU%i]z$Ox^)[gw.()!A"><field name="d">SBConnectedDevice.Output</field><field name="p">SBPort.D</field><next><block type="sbrick_set_device" id="FTLrPi#Mzi?Z1g/{^f1_"><field name="d">SBConnectedDevice.Output</field><field name="p">SBPort.C</field></block></next></block></next></block></statement></block></xml>
