@@ -4,8 +4,8 @@
     "dependencies": {
         "core": "*",
         "microphone": "*",
-        "sbrick": "github:vengit/pxt-sbrick#v1.0.7",
-        "bluetooth": "*"
+        "bluetooth": "*",
+        "sbrick": "github:targetarchitecture/pxt-sbrick-fixed#master"
     },
     "files": [
         "main.blocks",
