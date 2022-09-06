@@ -5,7 +5,7 @@
         "core": "*",
         "microphone": "*",
         "bluetooth": "*",
-        "sbrick": "github:vengit/pxt-sbrick#v1.0.7"
+        "sBrick fixed": "github:targetarchitecture/pxt-sbrick-fixed#v1.1.0"
     },
     "files": [
         "main.blocks",

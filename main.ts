@@ -42,6 +42,8 @@ basic.showLeds(`
 
 sbrick.connect("adalovelace")
 
+//bluetooth.uartReadUntil(serial.delimiters(Delimiters.NewLine))
+
 loops.everyInterval(100, function () {
     pressed = input.buttonIsPressed(Button.B)
     if (pressed) {
