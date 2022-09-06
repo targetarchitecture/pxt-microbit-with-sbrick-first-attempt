@@ -17,7 +17,7 @@ bluetooth.onBluetoothDisconnected(function () {
         `)
 })
 input.onButtonPressed(Button.A, function () {
-    sbrick.drive(255, SBPort.C, SBDirection.Forward)
+    sbrick.drive(100, SBPort.C, SBDirection.Forward)
     basic.pause(1000)
     sbrick.brake(SBPort.C)
 })
@@ -31,6 +31,7 @@ sbrick.onConnected(function () {
         `)
 })
 let pressed = false
+
 basic.showLeds(`
     . # . # .
     . # . # .
@@ -38,7 +39,9 @@ basic.showLeds(`
     # . . . #
     . # # # .
     `)
-sbrick.connect("Duck")
+
+sbrick.connect("adalovelace")
+
 loops.everyInterval(100, function () {
     pressed = input.buttonIsPressed(Button.B)
     if (pressed) {
