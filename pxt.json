@@ -5,7 +5,7 @@
         "core": "*",
         "microphone": "*",
         "bluetooth": "*",
-        "sbrick": "github:targetarchitecture/pxt-sbrick-fixed#master"
+        "sbrick": "github:targetarchitecture/pxt-sbrick-fixed#v1.0.7"
     },
     "files": [
         "main.blocks",
@@ -16,7 +16,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "4.0.17",
+        "target": "5.0.12",
         "targetId": "microbit"
     },
     "supportedTargets": [
